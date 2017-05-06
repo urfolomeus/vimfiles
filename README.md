@@ -12,6 +12,10 @@ I'm currently using [nvim](https://github.com/neovim/neovim).
 
 * Lunarized
 
+## Languages
+
+* Elixir
+
 ### Tools
 
 * vim-commentary
