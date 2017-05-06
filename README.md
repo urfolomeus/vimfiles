@@ -15,6 +15,7 @@ I'm currently using [nvim](https://github.com/neovim/neovim).
 ## Languages
 
 * Elixir
+* JavaScript/JSX
 
 ### Tools
 
