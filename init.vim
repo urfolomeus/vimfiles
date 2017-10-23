@@ -98,6 +98,7 @@ Plug 'https://github.com/aclissold/lunarized-syntax'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'slashmili/alchemist.vim'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
 
