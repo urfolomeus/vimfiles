@@ -25,6 +25,16 @@ nmap <silent> <leader>v :TestVisit<CR>
 " Shortcut to toggle NERDTree
 nmap <leader>b :NERDTreeToggle<CR>
 
+" Keymaps for vim markdown preview
+let vim_markdown_preview_toggle=2
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_browser='Google Chrome'
+
+" Word wrap and spell check in Markdown documents
+" au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile *.md setlocal spell
+set complete+=kspell
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
@@ -88,12 +98,14 @@ Plug 'https://github.com/aclissold/lunarized-syntax'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
 
 
 " tools
 Plug 'benmills/vimux'
 Plug 'itchyny/lightline.vim'
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'janko-m/vim-test'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
