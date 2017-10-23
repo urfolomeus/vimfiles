@@ -106,6 +106,7 @@ Plug 'tpope/vim-rails'
 " tools
 Plug 'airblade/vim-gitgutter'
 Plug 'benmills/vimux'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'janko-m/vim-test'
