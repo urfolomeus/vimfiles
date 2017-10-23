@@ -104,6 +104,7 @@ Plug 'tpope/vim-rails'
 
 
 " tools
+Plug 'airblade/vim-gitgutter'
 Plug 'benmills/vimux'
 Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
@@ -111,6 +112,7 @@ Plug 'janko-m/vim-test'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
