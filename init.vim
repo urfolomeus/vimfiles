@@ -16,6 +16,12 @@ let mapleader="\<SPACE>"
 " Shortcut for fzf
 nmap <leader>f :FZF<CR>
 
+" Shortcuts for running tests
+nmap <silent> <leader>T :TestNearest<CR>
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>v :TestVisit<CR>
+
 " Shortcut to toggle NERDTree
 nmap <leader>b :NERDTreeToggle<CR>
 
@@ -24,6 +30,11 @@ set listchars=tab:▸\ ,eol:¬
 
 " Set default search tool
 let $FZF_DEFAULT_COMMAND= 'ag --hidden --ignore node_modules --ignore .git -g ""'
+
+" vim test options
+let test#strategy = 'vimux'
+let g:VimuxHeight = '30'
+let g:VimuxOrientation = 'h'
 
 " Lightline options
 let g:lightline = {
@@ -77,9 +88,13 @@ Plug 'https://github.com/aclissold/lunarized-syntax'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-rails'
+
 
 " tools
+Plug 'benmills/vimux'
 Plug 'itchyny/lightline.vim'
+Plug 'janko-m/vim-test'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
