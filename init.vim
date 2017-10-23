@@ -1,5 +1,13 @@
 " Set options
 set number
+set nowrap
+set list
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
 
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
