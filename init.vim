@@ -7,6 +7,8 @@ set tabstop=2
 set shiftwidth=2
 set foldmethod=syntax
 set foldlevel=99
+set splitbelow
+set splitright
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
