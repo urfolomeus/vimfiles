@@ -17,6 +17,8 @@ Plug 'tpope/vim-commentary'
 
 call plug#end()
 
+
 " Set colorscheme
 colorscheme lunarized
+set background=dark
 
