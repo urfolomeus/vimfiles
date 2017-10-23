@@ -6,18 +6,6 @@ This is a repo that collects my current vim config files.
 
 I'm currently using [nvim](https://github.com/neovim/neovim).
 
-## Plugins
+## vimfile
 
-### Colorschemes
-
-* Lunarized
-
-## Languages
-
-* Elixir
-* JavaScript/JSX
-
-### Tools
-
-* vim-commentary
-
+See the init.vim file for my current settings.
