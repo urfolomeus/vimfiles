@@ -16,6 +16,9 @@ let mapleader="\<SPACE>"
 " Shortcut for fzf
 nmap <leader>f :FZF<CR>
 
+" Shortcut to toggle NERDTree
+nmap <leader>b :NERDTreeToggle<CR>
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
@@ -35,6 +38,7 @@ Plug 'pangloss/vim-javascript'
 
 " tools
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
