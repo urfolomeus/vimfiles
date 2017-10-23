@@ -10,6 +10,9 @@ set foldlevel=99
 set splitbelow
 set splitright
 
+" Remap leader to SPACE
+let mapleader="\<SPACE>"
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
