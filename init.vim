@@ -39,7 +39,7 @@ set complete+=kspell
 set listchars=tab:▸\ ,eol:¬
 
 " Set default search tool
-let $FZF_DEFAULT_COMMAND= 'ag --hidden --ignore node_modules --ignore .git -g ""'
+" let $FZF_DEFAULT_COMMAND= 'ag --hidden --ignore node_modules --ignore .git -g ""'
 
 " vim test options
 let test#strategy = 'vimux'
