@@ -106,6 +106,7 @@ Plug 'tpope/vim-rails'
 " tools
 Plug 'airblade/vim-gitgutter'
 Plug 'benmills/vimux'
+Plug 'dag/vim-fish'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
