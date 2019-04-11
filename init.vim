@@ -9,6 +9,7 @@ set foldmethod=syntax
 set foldlevel=99
 set splitbelow
 set splitright
+set clipboard=unnamedplus
 
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
@@ -39,7 +40,7 @@ set complete+=kspell
 set listchars=tab:▸\ ,eol:¬
 
 " Set default search tool
-" let $FZF_DEFAULT_COMMAND= 'ag --hidden --ignore node_modules --ignore .git -g ""'
+let $FZF_DEFAULT_COMMAND= 'ag --hidden --ignore node_modules --ignore .git -g ""'
 
 " vim test options
 let test#strategy = 'vimux'
@@ -113,6 +114,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'janko-m/vim-test'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'mattn/emmet-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
