@@ -14,17 +14,20 @@ set clipboard=unnamedplus
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
 
-" Shortcut for fzf
-nmap <leader>f :FZF<CR>
+" Shortcuts for fzf
+nmap <leader>a :Files<CR>
+nmap <leader>f :GFiles<CR>
+nmap <leader>g :Rg<CR>
+nmap <leader>b :Buffers<CR>
 
 " Shortcuts for running tests
-nmap <silent> <leader>T :TestNearest<CR>
-nmap <silent> <leader>t :TestFile<CR>
-nmap <silent> <leader>a :TestSuite<CR>
-nmap <silent> <leader>v :TestVisit<CR>
+" nmap <silent> <leader>T :TestNearest<CR>
+" nmap <silent> <leader>t :TestFile<CR>
+" nmap <silent> <leader>a :TestSuite<CR>
+" nmap <silent> <leader>v :TestVisit<CR>
 
 " Shortcut to toggle NERDTree
-nmap <leader>b :NERDTreeToggle<CR>
+nmap <leader>d :NERDTreeToggle<CR>
 
 " Keymaps for vim markdown preview
 let vim_markdown_preview_toggle=2
@@ -38,9 +41,6 @@ set complete+=kspell
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
-
-" Set default search tool
-let $FZF_DEFAULT_COMMAND= 'ag --hidden --ignore node_modules --ignore .git -g ""'
 
 " vim test options
 let test#strategy = 'vimux'
@@ -111,9 +111,10 @@ Plug 'dag/vim-fish'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
-Plug 'JamshedVesuna/vim-markdown-preview'
+" Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'janko-m/vim-test'
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/nerdtree'
