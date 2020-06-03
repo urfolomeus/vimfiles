@@ -88,6 +88,8 @@ function UpdateWordCount()
   let g:word_count = n
 endfunction
 
+" coc plugin things
+let g:python3_host_prog = '$HOME/.pyenv/versions/3.7.6/bin/python'
 
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
@@ -116,6 +118,7 @@ Plug 'janko-m/vim-test'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
@@ -123,10 +126,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
-Plug 'w0rp/ale'
 
 call plug#end()
 
+source /home/alangardner/src/vimfiles/plugins/nvim-coc.vim
 
 " Set colorscheme
 colorscheme lunarized
