@@ -14,14 +14,12 @@ set clipboard=unnamedplus
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-" Remap leader to SPACE
-let mapleader="\<SPACE>"
-
-" Word wrap and spell check in Markdown documents
-" au BufRead,BufNewFile *.md setlocal textwidth=80
+" Turn on spell check in Markdown documents
 au BufRead,BufNewFile *.md setlocal spell
 set complete+=kspell
 
+" Remap leader to SPACE
+let mapleader="\<SPACE>"
 
 " coc plugin things
 let g:python3_host_prog = '$HOME/.pyenv/versions/3.7.6/bin/python'
