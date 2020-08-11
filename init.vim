@@ -29,11 +29,6 @@ nmap <leader>b :Buffers<CR>
 " Shortcut to toggle NERDTree
 nmap <leader>d :NERDTreeToggle<CR>
 
-" Keymaps for vim markdown preview
-let vim_markdown_preview_toggle=2
-let vim_markdown_preview_hotkey='<C-m>'
-let vim_markdown_preview_browser='Google Chrome'
-
 " Word wrap and spell check in Markdown documents
 " au BufRead,BufNewFile *.md setlocal textwidth=80
 au BufRead,BufNewFile *.md setlocal spell
@@ -112,7 +107,6 @@ Plug 'benmills/vimux'
 Plug 'dag/vim-fish'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
-" Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'janko-m/vim-test'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
