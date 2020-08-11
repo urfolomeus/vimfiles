@@ -115,8 +115,8 @@ Plug 'benmills/vimux'
 call plug#end()
 
 " source plugin config files
-source /home/alangardner/src/vimfiles/config/coc.vim
-source /home/alangardner/src/vimfiles/config/fzf.vim
+source $HOME/src/vimfiles/config/coc.vim
+source $HOME/src/vimfiles/config/fzf.vim
 
 " Set colorscheme
 colorscheme lunarized
