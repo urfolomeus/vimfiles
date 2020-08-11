@@ -21,9 +21,6 @@ set complete+=kspell
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
 
-" coc plugin things
-let g:python3_host_prog = '$HOME/.pyenv/versions/3.7.6/bin/python'
-
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -67,6 +64,7 @@ source $HOME/src/vimfiles/config/fzf.vim
 source $HOME/src/vimfiles/config/lightline.vim
 source $HOME/src/vimfiles/config/nerdtree.vim
 source $HOME/src/vimfiles/config/pencil.vim
+source $HOME/src/vimfiles/config/python.vim
 
 " Set colorscheme
 colorscheme lunarized
