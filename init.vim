@@ -29,6 +29,12 @@ nmap <leader>b :Buffers<CR>
 " Shortcut to toggle NERDTree
 nmap <leader>d :NERDTreeToggle<CR>
 
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
 " Word wrap and spell check in Markdown documents
 " au BufRead,BufNewFile *.md setlocal textwidth=80
 au BufRead,BufNewFile *.md setlocal spell
@@ -110,9 +116,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'janko-m/vim-test'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'reedes/vim-pencil'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
