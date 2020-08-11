@@ -1,7 +1,4 @@
-" NOTE: Obviously, this is a gigantic file for one plugin. But deservedly so.
-" My recommendation is to stick this in your .config directory, and source it
-" from within your `vimrc` or `init.vim` as such:
-" source $HOME/.config/plugins/nvim-coc.vim
+" Source this file in your init.vim: `source $HOME/src/vimfiles/config/coc.vim`
 
 let g:coc_global_extensions = [
   \ 'coc-pairs',
@@ -17,7 +14,7 @@ let g:coc_global_extensions = [
 
 set hidden
 
-" Prettier is a bit of a snowflake, so it needs this.
+" Prettier needs this.
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Some servers have issues with backup files, see #649.
@@ -30,15 +27,6 @@ set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-" if has("patch-8.1.1564")
-"   " Recently vim can merge signcolumn and number column into one
-"   set signcolumn=number
-" else
-"   set signcolumn=yes
-" endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -53,9 +41,6 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
