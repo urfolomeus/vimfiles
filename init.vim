@@ -17,10 +17,6 @@ set listchars=tab:▸\ ,eol:¬
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
 
-
-" Shortcut to toggle NERDTree
-nmap <leader>d :NERDTreeToggle<CR>
-
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
@@ -117,6 +113,7 @@ call plug#end()
 " source plugin config files
 source $HOME/src/vimfiles/config/coc.vim
 source $HOME/src/vimfiles/config/fzf.vim
+source $HOME/src/vimfiles/config/nerdtree.vim
 
 " Set colorscheme
 colorscheme lunarized
