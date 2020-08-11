@@ -88,33 +88,33 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/aclissold/lunarized-syntax'
 
 " languages
-Plug 'elixir-lang/vim-elixir'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
 Plug 'slashmili/alchemist.vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
+Plug 'cespare/vim-toml'
 
 
 " tools
-Plug 'airblade/vim-gitgutter'
-Plug 'benmills/vimux'
-Plug 'dag/vim-fish'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
-Plug 'itchyny/lightline.vim'
+Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'mattn/emmet-vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'reedes/vim-pencil'
+Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
+Plug 'benmills/vimux'
 
 call plug#end()
 
