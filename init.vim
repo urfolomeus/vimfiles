@@ -20,12 +20,6 @@ nmap <leader>f :GFiles<CR>
 nmap <leader>g :Rg<CR>
 nmap <leader>b :Buffers<CR>
 
-" Shortcuts for running tests
-" nmap <silent> <leader>T :TestNearest<CR>
-" nmap <silent> <leader>t :TestFile<CR>
-" nmap <silent> <leader>a :TestSuite<CR>
-" nmap <silent> <leader>v :TestVisit<CR>
-
 " Shortcut to toggle NERDTree
 nmap <leader>d :NERDTreeToggle<CR>
 
@@ -42,11 +36,6 @@ set complete+=kspell
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
-
-" vim test options
-let test#strategy = 'vimux'
-let g:VimuxHeight = '30'
-let g:VimuxOrientation = 'h'
 
 " Lightline options
 let g:lightline = {
@@ -113,7 +102,6 @@ Plug 'benmills/vimux'
 Plug 'dag/vim-fish'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'janko-m/vim-test'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
