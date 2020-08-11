@@ -17,11 +17,6 @@ set listchars=tab:▸\ ,eol:¬
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
 
-" Shortcuts for fzf
-nmap <leader>a :Files<CR>
-nmap <leader>f :GFiles<CR>
-nmap <leader>g :Rg<CR>
-nmap <leader>b :Buffers<CR>
 
 " Shortcut to toggle NERDTree
 nmap <leader>d :NERDTreeToggle<CR>
@@ -119,7 +114,9 @@ Plug 'benmills/vimux'
 
 call plug#end()
 
+" source plugin config files
 source /home/alangardner/src/vimfiles/config/coc.vim
+source /home/alangardner/src/vimfiles/config/fzf.vim
 
 " Set colorscheme
 colorscheme lunarized
