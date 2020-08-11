@@ -11,6 +11,9 @@ set splitbelow
 set splitright
 set clipboard=unnamedplus
 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
 
@@ -34,8 +37,6 @@ augroup END
 au BufRead,BufNewFile *.md setlocal spell
 set complete+=kspell
 
-" Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
 
 " Lightline options
 let g:lightline = {
