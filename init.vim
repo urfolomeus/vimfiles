@@ -17,12 +17,6 @@ set listchars=tab:▸\ ,eol:¬
 " Remap leader to SPACE
 let mapleader="\<SPACE>"
 
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
-augroup END
-
 " Word wrap and spell check in Markdown documents
 " au BufRead,BufNewFile *.md setlocal textwidth=80
 au BufRead,BufNewFile *.md setlocal spell
@@ -114,6 +108,7 @@ call plug#end()
 source $HOME/src/vimfiles/config/coc.vim
 source $HOME/src/vimfiles/config/fzf.vim
 source $HOME/src/vimfiles/config/nerdtree.vim
+source $HOME/src/vimfiles/config/pencil.vim
 
 " Set colorscheme
 colorscheme lunarized
