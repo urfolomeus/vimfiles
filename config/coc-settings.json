@@ -1,0 +1,11 @@
+{
+  "suggest.noselect": false,
+  "python.autoComplete.addBrackets": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.pyenv/shims/black",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+  "python.jediEnabled": true,
+  "coc.preferences.formatOnSaveFiletypes": ["python"]
+}
