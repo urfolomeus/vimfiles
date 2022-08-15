@@ -22,7 +22,7 @@ There are various config files in [/config](./config) that are used by the plugi
 
 ## Setting up CoC for Python linting
 
-1. Symlink `config/coc-config.json` to `$HOME/.config/nvim/coc-config.json`.
+1. Symlink `config/coc-settings.json` to `$HOME/.config/nvim/coc-settings.json`.
 2. Symlink `../dotfiles/python/flake8` to `$HOME/.config/flake8` so that we get the right default Flake8 settings to play nicely with Black.
 3. Install [pyenv](https://github.com/pyenv/pyenv).
 4. Install the desired version of Python (i.e. `pyenv install 3.7.8`)

@@ -59,12 +59,12 @@ Plug 'benmills/vimux'
 call plug#end()
 
 " source plugin config files
-source $HOME/src/vimfiles/config/coc.vim
-source $HOME/src/vimfiles/config/fzf.vim
-source $HOME/src/vimfiles/config/lightline.vim
-source $HOME/src/vimfiles/config/nerdtree.vim
-source $HOME/src/vimfiles/config/pencil.vim
-source $HOME/src/vimfiles/config/python.vim
+source $HOME/src/dot/vimfiles/config/coc.vim
+source $HOME/src/dot/vimfiles/config/fzf.vim
+source $HOME/src/dot/vimfiles/config/lightline.vim
+source $HOME/src/dot/vimfiles/config/nerdtree.vim
+source $HOME/src/dot/vimfiles/config/pencil.vim
+source $HOME/src/dot/vimfiles/config/python.vim
 
 " Set colorscheme
 colorscheme lunarized
